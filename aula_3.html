@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03</title>
+</head>
+<style>
+    div{
+        margin-bottom: 10px;
+    }
+    label, input{
+        display: block;
+    }
+    .checkbox label,
+    .checkbox input{
+        display: inline-block;
+    }
+    .radio label,
+    .radio input{
+        display: inline-block;
+    }
+</style>
+<body>
+    <div>
+        <form action="" method="post">
+           <div>
+              <label for="nome">Nome:</label>
+              <input type="text" name="nome" placeholder="Digite o seu nome" required>
+           </div>
+           <div>
+            <label for="idade">Idade:</label>
+            <input type="number" name="idade" placeholder="Digite a sua idade" required min="0" max="70">
+           </div>
+           <div>
+            <label for="cidade">Cidade:</label>
+            <input type="text" name="cidade" placeholder="Digite a sua cidade" required> 
+           </div>
+           <div>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" placeholder="Digite o seu E-mail" required>
+           </div>
+           <div>
+               <label for="cpf">CPF:</label>
+               <input type="text" name="cpf" value="000.111.222-33" disabled>
+           </div>
+           <div>
+               <label for="senha">Senha:</label>
+               <input type="password" name="senha" placeholder="Digite a sua senha" required>
+           </div>
+           <label for="preferidos">Selecione o seu time favorito:</label>
+           <div class="radio">
+               <input type="radio" name="preferidos" required>
+               <label>São Paulo</label>
+          </div>
+          <div class="radio">
+            <input type="radio" name="preferidos" required>
+            <label>Bahia</label>
+       </div>
+           <label for="disciplinas">Selecione as disciplinas do semestre:</label>
+           <div class="checkbox">
+               <input type="checkbox" name="disciplinas" required>
+               <label>IoT II</label>
+           </div>
+           <div class="checkbox">
+            <input type="checkbox" name="disciplinas" required>
+            <label>Sinais de Processamento</label>
+           </div>
+           <div class="checkbox">
+               <input type="checkbox" name="disciplinas" required>
+               <label>Processamento de Sinais</label>
+            </div>
+            <div>
+                <label>Selecione o seu arquivo:</label>
+                <input type="file">
+           </div>
+           <div>
+               <label>Selecione um ou mais arquivos:</label>
+               <input type="file" name="arquivos[]" multiple>
+           </div>
+           <label>Selecione um Produto:</label>
+           <div>
+               <select>
+                <option value="produto_1">Água</option>
+                <option value="produto_2">Carne</option>
+                <option value="produto_3">Refrigerante</option>
+                <option value="produto_4">Frango</option>
+                </select>
+         </div>
+         <div>
+            <label>Selecione um ou mais Produtos:</label>
+            <select multiple>
+                <option value="produto_1">Água</option>
+                <option value="produto_2">Carne</option>
+                <option value="produto_3">Refrigerante</option>
+                <option value="produto_4">Frango</option>
+            </select>
+           </div>
+           <div>
+            <label>Deixe o seu comentário:</label>
+            <textarea></textarea>
+           </div>
+           <div>
+               <label for="data">Data:</label>
+               <input type="date" name="data" required>
+           </div>
+           <div>
+               <input style="display: inline-block;" type="reset" value="Limpar" >
+               <input style="display: inline-block;"type="submit" value="Enviar">
+         </div>
+         
+        </form>
+    </div>
+</body>
+</html>
